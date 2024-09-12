@@ -1,62 +1,53 @@
-import torch
-from diffusers import StableDiffusionImg2ImgPipeline
-from diffusers.models import ControlNetModel
+from huggingface_hub import InferenceClient
 from PIL import Image
-import os
+import io
 
-def load_model_with_fallback(model_id, controlnet_id):
-    print(f"Attempting to load model: {model_id}")
-    try:
-        pipe = StableDiffusionImg2ImgPipeline.from_pretrained(model_id, torch_dtype=torch.float16)
-        print("Base model loaded successfully")
 
-        print(f"Attempting to load ControlNet: {controlnet_id}")
-        controlnet = ControlNetModel.from_pretrained(controlnet_id, torch_dtype=torch.float16)
-        pipe.controlnet = controlnet
-        print("ControlNet loaded successfully")
+def generate_image(input_image_path, prompt):
+    # Initialize the InferenceClient
+    client = InferenceClient(
+        model="lllyasviel/sd-controlnet-canny",
+        token="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",
+    )
 
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-        pipe = pipe.to(device)
-        print(f"Pipeline moved to {device}")
-        
-        return pipe
-    except Exception as e:
-        print(f"Error loading model: {str(e)}")
-        return None
+    # Open and read the input image
+    with open(input_image_path, "rb") as f:
+        input_image = f.read()
 
-def design_room(pipe, empty_room_image: Image.Image, prompt: str, strength: float = 0.75) -> Image.Image:
-    full_prompt = f"Interior design: {prompt}, photorealistic, high quality"
-    
-    try:
-        result = pipe(
-            prompt=full_prompt,
-            image=empty_room_image,
-            strength=strength,
-            guidance_scale=7.5,
-        )
-        return result.images[0]
-    except Exception as e:
-        print(f"Error generating image: {str(e)}")
-        return None
+    # Set up the parameters
+    params = {
+        "prompt": prompt,
+        "strength": 0.75,
+        "guidance_scale": 7.5,
+        "negative_prompt": "blurry, low quality, ugly",
+    }
 
-# Main execution
-if __name__ == "__main__":
-    model_id = "stabilityai/stable-diffusion-2-1-base"
-    controlnet_id = "lllyasviel/sd-controlnet-canny"
-    
-    pipe = load_model_with_fallback(model_id, controlnet_id)
-    
-    if pipe is not None:
-        empty_room_path = "empty_room.jpg"
-        if not os.path.exists(empty_room_path):
-            print(f"Error: The file {empty_room_path} does not exist.")
-        else:
-            empty_room = Image.open(empty_room_path)
-            design_prompt = "Modern living room with a grey sofa, glass coffee table, and abstract art on the walls"
-            furnished_room = design_room(pipe, empty_room, design_prompt)
-            
-            if furnished_room is not None:
-                furnished_room.save("gen_furnished_room.png")
-                print("Furnished room image saved as 'furnished_room.png'")
-    else:
-        print("Failed to load the model. Please check your internet connection and try again.")
+    # Make the API call
+    # response = client.image_to_image(
+    #     model="stabilityai/stable-diffusion-2-1",
+    #     image=input_image,
+    #     **params
+    # )
+
+    response = client.image_to_image(
+        "empty_room.jpg",
+        prompt="Modern living room with a grey sofa, glass coffee table, and abstract art on the walls",
+    )
+
+    return response
+
+
+# Parameters
+input_image_path = "empty_room.jpg"
+prompt = "Modern living room with a grey sofa, glass coffee table, and abstract art on the walls"
+
+# Generate the image
+try:
+    generated_image = generate_image(input_image_path, prompt)
+    print(generated_image)
+
+    # Save the generated image directly
+    generated_image.save("furnished_room.png")
+    print("Image saved as furnished_room.png")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
