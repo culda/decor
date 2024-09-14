@@ -70,29 +70,7 @@ def upload_to_imgbb(image):
     
     return response.json()['data']['url']
 
-def replace_furniture(img_url):
-    # Step 1: Object Detection
-    bbox = object_detection(img_url)
-    
-    # Download the image
-    room_image = download_image(img_url)
-    
-    # Create a mask
-    mask = create_mask(room_image, bbox)
-    
-    # Save mask temporarily
-    mask_path = "temp_mask.png"
-    mask.save(mask_path)
-    
-    # Step 2: Image Inpainting
-    inpainted_image_url = inpaint_image(img_url, mask_path)
-    
-    # Step 3: Image-to-Image Translation
-    final_image_url = image_to_image(inpainted_image_url)
-    
-    return final_image_url
-
-img_url = "https://claudiainteriors.co.uk/wp-content/uploads/2020/01/Interiors-with-Art_Canary-Wharf_ClaudiaInteriors10-2048x1366.jpg?v=1585737710"
+img_url = "https://claudiainteriors.co.uk/wp-content/uploads/2020/01/Interiors-with-Art_Canary-Wharf_ClaudiaInteriors10-2048x1366.jpg"
 
 output = {"Det-0": {"x0": 125.7328109741211, "y0": 586.3945922851562, "x1": 2009.5390625, "y1": 1363.78515625, "score": 0.9718478918075562, "cls": "blue sofa"}, "Det-1": {"x0": 257.3641052246094, "y0": 234.32701110839844, "x1": 508.5917053222656, "y1": 474.03521728515625, "score": 0.6458826065063477, "cls": "mao zedong picture"}}
 
@@ -105,7 +83,6 @@ img = download_image(img_url)
 mask = create_mask(img, bbox)
 
 mask_url = upload_to_imgbb(mask)
-
 
 print("img", img_url)
 print("mask", mask_url)
