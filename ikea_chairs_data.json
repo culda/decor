@@ -1,0 +1,173 @@
+[
+  {
+    "name": "BERGMUND",
+    "description": "Bar stool with backrest, 62 cm",
+    "price": "95",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/bergmund-bar-stool-with-backrest-oak-effect-gunnared-medium-grey__0926414_pe789201_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/bergmund-bar-stool-with-backrest-oak-effect-gunnared-medium-grey__0926415_pe789202_s5.jpg"
+    ]
+  },
+  {
+    "name": "INGOLF",
+    "description": "Bar stool with backrest, 63 cm",
+    "price": "60",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/ingolf-bar-stool-with-backrest-white__0728062_pe736035_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/ingolf-bar-stool-with-backrest-white__0873775_pe595558_s5.jpg"
+    ]
+  },
+  {
+    "name": "SANDSBERG",
+    "description": "Bar stool, 63 cm",
+    "price": "25",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/sandsberg-bar-stool-black-brown-stained__1068122_pe852972_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/sandsberg-bar-stool-black-brown-stained__1056637_pe848437_s5.jpg"
+    ]
+  },
+  {
+    "name": "JANINGE",
+    "description": "Bar stool, 76 cm",
+    "price": "115",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/janinge-bar-stool-white__0728069_pe736042_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/janinge-bar-stool-white__1250259_pe923662_s5.jpg"
+    ]
+  },
+  {
+    "name": "NILSOLLE",
+    "description": "Bar stool, 74 cm",
+    "price": "45",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/nilsolle-bar-stool-birch__45919_pe142507_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/nilsolle-bar-stool-birch__1250295_pe923688_s5.jpg"
+    ]
+  },
+  {
+    "name": "STIG",
+    "description": "Bar stool with backrest, 63 cm",
+    "price": "15",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/stig-bar-stool-with-backrest-black-black__0948110_pe798867_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/stig-bar-stool-with-backrest-black-black__0948114_pe798869_s5.jpg"
+    ]
+  },
+  {
+    "name": "FRANKLIN",
+    "description": "Bar stool with backrest, foldable, 63 cm",
+    "price": "30",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/franklin-bar-stool-with-backrest-foldable-black-black__0727485_pe735710_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/franklin-bar-stool-with-backrest-foldable-black-black__0874580_pe680502_s5.jpg"
+    ]
+  },
+  {
+    "name": "LILL\u00c5N\u00c4S",
+    "description": "Bar stool, 63 cm",
+    "price": "95",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/lillanaes-bar-stool-chrome-plated-gunnared-dark-grey__1150252_pe884439_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/lillanaes-bar-stool-chrome-plated-gunnared-dark-grey__1150251_pe884440_s5.jpg"
+    ]
+  },
+  {
+    "name": "DALFRED",
+    "description": "Bar stool, 63-74 cm",
+    "price": "50",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/dalfred-bar-stool-black__0727486_pe735711_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/dalfred-bar-stool-black__0874458_pe595557_s5.jpg"
+    ]
+  },
+  {
+    "name": "NORDVIKEN",
+    "description": "Bar stool with backrest, 62 cm",
+    "price": "65",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/nordviken-bar-stool-with-backrest-black__0714166_pe729956_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/nordviken-bar-stool-with-backrest-black__0797137_pe766703_s5.jpg"
+    ]
+  },
+  {
+    "name": "EKEDALEN",
+    "description": "Bar stool with backrest, 62 cm",
+    "price": "70",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-dark-brown-ramna-light-grey__0657893_pe710024_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-dark-brown-ramna-light-grey__0756468_pe748906_s5.jpg"
+    ]
+  },
+  {
+    "name": "GLENN",
+    "description": "Bar stool, 66 cm",
+    "price": "70",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/glenn-bar-stool-white-chrome-plated__0728083_pe736048_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/glenn-bar-stool-white-chrome-plated__1250324_pe923708_s5.jpg"
+    ]
+  },
+  {
+    "name": "EKEDALEN",
+    "description": "Bar stool with backrest, 62 cm",
+    "price": "70",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-white-ramna-light-grey__0657867_pe710002_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-white-ramna-light-grey__0707284_pe726162_s5.jpg"
+    ]
+  },
+  {
+    "name": "BERGMUND",
+    "description": "Bar stool with backrest, 62 cm",
+    "price": "140",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/bergmund-bar-stool-with-backrest-black-glose-black__0928322_pe789788_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/bergmund-bar-stool-with-backrest-black-glose-black__0928326_pe789790_s5.jpg"
+    ]
+  },
+  {
+    "name": "R\u00d6NNINGE",
+    "description": "Bar stool, 75 cm",
+    "price": "75",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/roenninge-bar-stool-birch__1044548_pe842221_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/roenninge-bar-stool-birch__1051123_pe844996_s5.jpg"
+    ]
+  },
+  {
+    "name": "EKEDALEN",
+    "description": "Bar stool with backrest, 75 cm",
+    "price": "75",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-dark-brown-ramna-light-grey__0657901_pe710031_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-dark-brown-ramna-light-grey__0872149_pe720430_s5.jpg"
+    ]
+  },
+  {
+    "name": "YNGVAR",
+    "description": "Bar stool, 75 cm",
+    "price": "125",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/yngvar-bar-stool-anthracite__0714270_pe729999_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/yngvar-bar-stool-anthracite__1250272_pe923674_s5.jpg"
+    ]
+  },
+  {
+    "name": "GR\u00d6NSTA",
+    "description": "Bar stool, 64 cm",
+    "price": "75",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/groensta-bar-stool-white-in-outdoor__1335567_pe947092_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/groensta-bar-stool-white-in-outdoor__1335566_pe947087_s5.jpg"
+    ]
+  },
+  {
+    "name": "EKEDALEN",
+    "description": "Bar stool with backrest, 75 cm",
+    "price": "75",
+    "images": [
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-white-ramna-light-grey__0657871_pe710003_s5.jpg",
+      "https://www.ikea.com/gb/en/images/products/ekedalen-bar-stool-with-backrest-white-ramna-light-grey__0872068_pe720436_s5.jpg"
+    ]
+  }
+]
